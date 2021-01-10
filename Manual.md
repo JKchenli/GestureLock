@@ -30,7 +30,7 @@
 //LockView Helper 实现加解密，判断状态等方法
 <item name="lock_helper">com.cl.gesturelock.util.DefaultLockHelper</item>
 ```
-#自定义实现Cell绘制方式
+# 自定义实现Cell绘制方式
 ```
 自定义类实现ILockCellView接口，如DefaultLockCellView
 class DefaultLockCellView : ILockCellView {
@@ -105,7 +105,7 @@ class DefaultLockCellView : ILockCellView {
 
 }
 ```
-#自定义实现连线绘制方式
+# 自定义实现连线绘制方式
 ```
 自定义类实现ILockLinkView接口，如DefaultLockLinkView
 class DefaultLockLinkView : ILockLinkView {
@@ -168,7 +168,7 @@ class DefaultLockLinkView : ILockLinkView {
 
 }
 ```
-#自定义实现加解密
+# 自定义实现加解密
 ```
 自定义类继承AbstractLockHelper，如DefaultLockHelper
 class DefaultLockHelper : AbstractLockHelper() {
@@ -221,7 +221,7 @@ class DefaultLockHelper : AbstractLockHelper() {
     }
 }
 ```
-#实现LockView状态监听
+# 实现LockView状态监听
 ```
 mGlvLock.setGestureLockListener(object : GestureLockListener {
     /**

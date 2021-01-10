@@ -12,7 +12,7 @@ implementation 'com.github.JKchenli:GestureLock:1.0'
 
 
 ## Licenses
-- Copyright (C) 2013 JKchenli <mszs1405@163.com>
+- Copyright (C) 2020 JKchenli <mszs1405@163.com>
 
 - Licensed under the Apache License, Version 2.0 (the "License");
 - you may not use this file except in compliance with the License.

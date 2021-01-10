@@ -6,9 +6,9 @@
 implementation 'com.github.JKchenli:GestureLock:1.0'
 ```
 
-[**English Doc**](https://github.com/JKchenli/GestureLock/Manual.md)
+[**English Doc**](https://github.com/JKchenli/GestureLock/blob/main/Manual.md)
 
-[**中文使用文档**](https://github.com/JKchenli/GestureLock/Manual_CN.md)
+[**中文使用文档**](https://github.com/JKchenli/GestureLock/blob/main/Manual_CN.md)
 
 
 ## Licenses

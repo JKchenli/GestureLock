@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="GestureLockView">
+        <attr name="lock_normalColor" format="color|reference" />
+        <attr name="lock_touchColor" format="color|reference" />
+        <attr name="lock_errorColor" format="color|reference" />
+        <attr name="lock_fillColor" format="color|reference" />
+        <attr name="lock_rowNum" format="integer|reference" />
+        <attr name="lock_columnNum" format="integer|reference" />
+        <attr name="lock_minTouchNum" format="integer|reference" />
+        <attr name="lock_maxErrorNum" format="integer|reference" />
+        <attr name="lock_lineWidth" format="dimension|reference" />
+        <attr name="lock_lockView" format="string" />
+        <attr name="lock_linkView" format="string" />
+        <attr name="lock_helper" format="string" />
+        <attr name="lock_statusStayDuration" format="integer|reference" />
+        <attr name="lock_enableFeedback" format="boolean|reference" />
+    </declare-styleable>
+
+    <attr name="GestureLockViewAttr"></attr>
+
+    <style name="GestureLockViewDefault">
+        <item name="lock_normalColor">#CCCCCC</item>
+        <item name="lock_touchColor">#FCC123</item>
+        <item name="lock_errorColor">#E85053</item>
+        <item name="lock_fillColor">#FFFFFF</item>
+        <item name="lock_minTouchNum">4</item>
+        <item name="lock_maxErrorNum">5</item>
+        <item name="lock_rowNum">3</item>
+        <item name="lock_columnNum">3</item>
+        <item name="lock_lockView">com.cl.gesturelock.view.DefaultLockCellView</item>
+        <item name="lock_linkView">com.cl.gesturelock.view.DefaultLockLinkView</item>
+        <item name="lock_helper">com.cl.gesturelock.util.DefaultLockHelper</item>
+        <item name="lock_lineWidth">2dp</item>
+        <item name="lock_statusStayDuration">1</item>
+    </style>
+</resources>

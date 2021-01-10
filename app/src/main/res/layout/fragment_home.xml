@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ui.home.HomeFragment">
+
+
+    <EditText
+        android:id="@+id/et_row"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="行数"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_column"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="列数"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_row" />
+
+    <EditText
+        android:id="@+id/et_line_width"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="连线宽(单位:dp)"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_column" />
+
+    <RadioGroup
+        android:id="@+id/rg_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_line_width">
+
+        <RadioButton
+            android:id="@+id/rb_dark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="暗黑模式" />
+
+        <RadioButton
+            android:id="@+id/rb_light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="明亮模式" />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/rg_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rg_mode">
+
+        <RadioButton
+            android:id="@+id/rb_default"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="默认样式" />
+
+        <RadioButton
+            android:id="@+id/rb_simple"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="简单样式" />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/rg_feedback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rg_style">
+
+        <RadioButton
+            android:id="@+id/rb_enable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开启触碰反馈" />
+
+        <RadioButton
+            android:id="@+id/rb_disable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="关闭触碰反馈" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/bt_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="保存配置"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rg_feedback" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">GestureLock</string>
+    <string name="title_activity_home">MainActivity</string>
+    <string name="title_home">配置</string>
+    <string name="title_settings">设置</string>
+    <string name="title_verified">验证</string>
+</resources>

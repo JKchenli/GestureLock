@@ -23,6 +23,7 @@ class DefaultLockHelper : AbstractLockHelper() {
 
     /**
      * 加盐加密
+     * @param content
      */
     override fun encrypt(content: String): String {
         val cipher: Cipher = Cipher.getInstance(CIPHER_MODE)
@@ -34,6 +35,7 @@ class DefaultLockHelper : AbstractLockHelper() {
 
     /**
      * 解密
+     * @param encryptContent
      */
     override fun decrypt(encryptContent: String): String {
         val cipher: Cipher = Cipher.getInstance(CIPHER_MODE)

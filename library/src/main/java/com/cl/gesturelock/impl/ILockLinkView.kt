@@ -13,6 +13,12 @@ import com.cl.gesturelock.bean.LockCellBean
 interface ILockLinkView {
     /**
      * 绘制触碰状态下连线
+     * @param canvas
+     * @param touchList
+     * @param cellBean
+     * @param endX 手指位置X
+     * @param endY 手指位置Y
+     * @param paint
      */
     fun drawTouch(
         canvas: Canvas,
@@ -25,6 +31,10 @@ interface ILockLinkView {
 
     /**
      * 绘制触碰错误状态下连线
+     * @param canvas
+     * @param touchList
+     * @param cellBean
+     * @param paint
      */
     fun drawError(
         canvas: Canvas,

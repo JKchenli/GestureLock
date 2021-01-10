@@ -12,6 +12,10 @@ import com.cl.gesturelock.bean.LockCellBean
 interface ILockCellView {
     /**
      * 绘制无触碰状态下Cell
+     *
+     * @param canvas
+     * @param cellBean
+     * @param paint
      */
     fun drawNormal(
         canvas: Canvas,
@@ -21,6 +25,10 @@ interface ILockCellView {
 
     /**
      * 绘制触碰状态下Cell
+     * @param canvas
+     * @param cellBean
+     * @param nextCellBean
+     * @param paint
      */
     fun drawTouch(
         canvas: Canvas,
@@ -31,6 +39,10 @@ interface ILockCellView {
 
     /**
      * 绘制触碰错误状态下Cell
+     * @param canvas
+     * @param cellBean
+     * @param nextCellBean
+     * @param paint
      */
     fun drawError(
         canvas: Canvas,

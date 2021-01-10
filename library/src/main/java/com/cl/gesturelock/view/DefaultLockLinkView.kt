@@ -13,7 +13,15 @@ import com.cl.gesturelock.impl.ILockLinkView
  * @Description
  */
 class DefaultLockLinkView : ILockLinkView {
-
+    /**
+     * 绘制触碰状态下连线
+     * @param canvas
+     * @param touchList
+     * @param cellBean
+     * @param endX 手指位置X
+     * @param endY 手指位置Y
+     * @param paint
+     */
     override fun drawTouch(
         canvas: Canvas,
         touchList: ArrayList<Int>,
@@ -37,6 +45,13 @@ class DefaultLockLinkView : ILockLinkView {
         canvas.drawPath(path, paint)
     }
 
+    /**
+     * 绘制触碰错误状态下连线
+     * @param canvas
+     * @param touchList
+     * @param cellBean
+     * @param paint
+     */
     override fun drawError(
         canvas: Canvas,
         touchList: ArrayList<Int>,

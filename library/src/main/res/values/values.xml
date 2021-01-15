@@ -17,8 +17,6 @@
         <attr name="lock_enableFeedback" format="boolean|reference" />
     </declare-styleable>
 
-    <attr name="GestureLockViewAttr"></attr>
-
     <style name="GestureLockViewDefault">
         <item name="lock_normalColor">#CCCCCC</item>
         <item name="lock_touchColor">#FCC123</item>
